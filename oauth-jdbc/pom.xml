@@ -8,7 +8,7 @@
 		<version>2.0.3.RELEASE</version>
 	</parent>
 
-	<artifactId>oauth-jdbc</artifactId>
+	<artifactId>oauth2-jdbc</artifactId>
 	<packaging>war</packaging>
 
 	<dependencies>
@@ -152,7 +152,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>oauth-jdbc</finalName>
+		<finalName>oauth2-jdbc</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
