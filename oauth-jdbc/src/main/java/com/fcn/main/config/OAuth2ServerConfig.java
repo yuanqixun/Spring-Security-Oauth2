@@ -83,15 +83,7 @@ public class OAuth2ServerConfig {
 		@Override
 		public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 			// @formatter:off
-			System.out.println("##############client init#########");
-			clients.jdbc(dataSource)
-				.withClient("appclinet")
-					.authorizedGrantTypes("password", "authorization_code")
-					.authorities("ROLE_CLIENT", "ROLE_TRUSTED_CLIENT")
-					.scopes("read", "write", "trust")
-					.resourceIds("oauth2-resource")
-					.secret("secret")
-					.accessTokenValiditySeconds(60);
+			clients.jdbc(dataSource);
 			// @formatter:on
 		}
 

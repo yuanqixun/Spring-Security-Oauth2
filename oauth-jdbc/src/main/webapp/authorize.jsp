@@ -21,7 +21,7 @@
 				<div class="form-group">
 					<label for="client_id">client_id</label> <input type="text"
 						class="form-control" id="client_id" name="client_id"
-						value="appclinet">
+						value="appclient">
 				</div>
 				<div class="form-group">
 					<label for="response_type">response_type</label> <input type="text"

@@ -12,11 +12,21 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
 @EnableWebSecurity
-public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication().withUser("ifast").password("ifast").roles("USER");
+    	/*auth.userDetailsService(new UserDetailsService(){
+
+			@Override
+			public UserDetails loadUserByUsername(String username)
+					throws UsernameNotFoundException {
+				return null;
+			}
+    		
+    	});*/
+    	
     }
 
     @Override
