@@ -74,7 +74,7 @@ public class OAuth2ServerConfig {
 		@Override
 		public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 
-			clients.inMemory().withClient("appclinet")
+			clients.inMemory().withClient("appclient")
 			 			.resourceIds(SERVER_RESOURCE_ID)
 			 			.authorizedGrantTypes("authorization_code")
 			 			.authorities("ROLE_CLIENT")
